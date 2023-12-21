@@ -1,9 +1,213 @@
 {
-  "posts": [
-    { "id": 1, "title": "json-server", "author": "typicode" }
+  "user": [
+    {
+      "role": "user",
+      "email": "fernando@mail.com",
+      "password": "qqqqqqqq",
+      "fullname": "Fernando",
+      "phone": "+6281807807881",
+      "referralCode": "719198",
+      "friendReferralCode": "",
+      "photo": "https://res.cloudinary.com/dezgxe4iq/image/upload/v1703046550/pxmdodi46euy1tbbybwn.png",
+      "balance": 224000,
+      "countRefCode": 1,
+      "completedShipments": 0,
+      "totalSpent": 0,
+      "gameTicket": 0,
+      "createdAt": "19/12/2023",
+      "updatedAt": "19/12/2023",
+      "id": 1
+    },
+    {
+      "role": "user",
+      "email": "fadli@mail.com",
+      "password": "qqqqqqqq",
+      "fullname": "Fadli",
+      "phone": "+6281807807882",
+      "referralCode": "819875",
+      "friendReferralCode": "719198",
+      "photo": "",
+      "balance": 0,
+      "countRefCode": 0,
+      "completedShipments": 0,
+      "totalSpent": 0,
+      "gameTicket": 0,
+      "createdAt": "19/12/2023",
+      "updatedAt": "19/12/2023",
+      "id": 2
+    }
   ],
-  "comments": [
-    { "id": 1, "body": "some comment", "postId": 1 }
+  "admin": [
+    {
+      "id": 1,
+      "email": "admin@mail.com",
+      "password": "qqqqqqqq",
+      "fullname": "admin",
+      "phoneNumber": "+62819479684",
+      "photo": "https://res.cloudinary.com/dezgxe4iq/image/upload/v1703060143/lk3q6ndfcisqq906gdmd.png",
+      "createdAt": "8/12/2023",
+      "updatedAt": "8/12/2023",
+      "phone": "+628194796854"
+    }
   ],
-  "profile": { "name": "typicode" }
+  "promo": [
+    {
+      "promoCode": "promo merdeka",
+      "discount": "40",
+      "quota": 98,
+      "used": 0,
+      "expiryDate": "2023-12-19",
+      "id": 4
+    },
+    {
+      "promoCode": "courier",
+      "discount": "99",
+      "quota": "25",
+      "used": 0,
+      "expiryDate": "2023-12-19",
+      "id": 5
+    },
+    {
+      "promoCode": "indonesia",
+      "discount": "99",
+      "quota": "15",
+      "used": 0,
+      "expiryDate": "2023-12-19",
+      "id": 6
+    },
+    {
+      "promoCode": "paket",
+      "discount": "99",
+      "quota": "10",
+      "used": 0,
+      "expiryDate": "2023-12-19",
+      "id": 7
+    }
+  ],
+  "destination": [
+    {
+      "userId": "1",
+      "province": "Bali",
+      "city": "Kota Denpasar",
+      "street": "Jl. Denpasar",
+      "city_id": "114",
+      "id": 1
+    },
+    {
+      "province": "Maluku",
+      "city": "Kota Ambon",
+      "street": "jl ambon",
+      "city_id": "14",
+      "id": 2
+    },
+    {
+      "province": "DI Yogyakarta",
+      "city": "Kota Yogyakarta",
+      "street": "borobudur",
+      "city_id": "501",
+      "id": 3
+    }
+  ],
+  "origin": [
+    {
+      "province": "Jawa Barat",
+      "city": "Kota Bekasi",
+      "street": "jl bekasi",
+      "city_id": "55",
+      "id": 1
+    },
+    {
+      "province": "Jawa Barat",
+      "city": "Kota Bandung",
+      "street": "jl. Dago",
+      "city_id": "23",
+      "id": 2
+    },
+    {
+      "province": "Papua",
+      "city": "Kota Jayapura",
+      "street": "jl. jayapura",
+      "city_id": "158",
+      "id": 3
+    },
+    {
+      "province": "Jawa Timur",
+      "city": "Kota Batu",
+      "street": "jl batu",
+      "city_id": "51",
+      "id": 4
+    }
+  ],
+  "payment": [
+    {
+      "userId": "1",
+      "origin": {
+        "sender": "Fernando",
+        "phoneNumber": "+6281807807881",
+        "province": "Jawa Barat",
+        "city": "Kota Bekasi",
+        "street": "jl bekasi"
+      },
+      "destination": {
+        "receiver": "putu",
+        "phoneNumber": "081807807881",
+        "province": "Bali",
+        "city": "Kota Denpasar",
+        "street": "Jl. Denpasar"
+      },
+      "dimension": {
+        "length": "10",
+        "width": "10",
+        "height": "10",
+        "weight": "1000"
+      },
+      "selectedCost": {
+        "service": "OKE",
+        "description": "Ongkos Kirim Ekonomis",
+        "cost": 26000,
+        "etd": "2-3"
+      },
+      "addons": [],
+      "promo": "",
+      "totalCost": 26000,
+      "status": "Need payment",
+      "id": 2
+    }
+  ],
+  "history": [
+    {
+      "userId": "1",
+      "origin": {
+        "sender": "Fernando",
+        "phoneNumber": "+6281807807881",
+        "province": "Jawa Barat",
+        "city": "Kota Bekasi",
+        "street": "jl bekasi"
+      },
+      "destination": {
+        "receiver": "putu",
+        "phoneNumber": "081807807881",
+        "province": "Bali",
+        "city": "Kota Denpasar",
+        "street": "Jl. Denpasar"
+      },
+      "dimension": {
+        "length": "20",
+        "width": "20",
+        "height": "20",
+        "weight": "1000"
+      },
+      "selectedCost": {
+        "service": "OKE",
+        "description": "Ongkos Kirim Ekonomis",
+        "cost": 26000,
+        "etd": "2-3"
+      },
+      "addons": [],
+      "promo": "",
+      "totalCost": 26000,
+      "status": "Arrived",
+      "id": 1
+    }
+  ]
 }
